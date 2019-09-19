@@ -1,0 +1,5 @@
+<% @uploads.each do |upload| %>
+  <%= upload.file_url %>
+  <br>
+<% end %><br>
+<%= link_to 'New upload', new_upload_path %>

@@ -1,0 +1,7 @@
+<%= link_to 'Destroy', @upload,  method: :delete, data: { confirm: 'Are you sure?' } %>
+<img src="<%= @upload.image_url.url %>" /><br/>
+<% if false %>
+<img src="<%= @upload.image_url.large %>" /><br/>
+<img src="<%= @upload.image_url.medium %>" /><br/>
+<img src="<%= @upload.image_url.thumb %>" /><br/>
+<% end %>
