@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_09_19_141031) do
 
-  create_table "uploads", force: :cascade do |t|
+  create_table "uploads", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "file_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
