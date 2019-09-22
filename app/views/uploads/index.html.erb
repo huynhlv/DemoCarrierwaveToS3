@@ -1,5 +1,6 @@
 <% @uploads.each do |upload| %>
-  <a href="<%= upload.file_url %>" style="color: blue"><%= upload.file_url %></a>
+  <% s = upload.file_url.to_s %>
+  <a href="<%= upload.file_url %>" style="color: blue"><%= s[(s.rindex('/')+1)..-1] %></a>
   <br>
 <% end %><br>
 <%= link_to 'New upload', new_upload_path %>
