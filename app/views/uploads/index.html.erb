@@ -1,5 +1,5 @@
 <% @uploads.each do |upload| %>
-  <%= upload.file_url %>
+  <a href="<%= upload.file_url %>" style="color: blue"><%= upload.file_url %></a>
   <br>
 <% end %><br>
 <%= link_to 'New upload', new_upload_path %>
